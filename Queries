@@ -1,0 +1,13 @@
+-- queries.sql
+
+-- Retrieve all books published after the year 2000
+SELECT * FROM books WHERE publication_year > 2000;
+
+-- Find the total number of available copies for each book
+SELECT title, SUM(available_copies) AS total_copies FROM books GROUP BY title;
+
+-- List all authors who were born before 1970
+SELECT * FROM authors WHERE birth_year < 1970;
+
+-- Identify members who joined the library in the last month
+SELECT * FROM members WHERE membership_start_date >= CURRENT_DATE - INTERVAL '1 month';
