@@ -35,10 +35,10 @@ This project implements a simple Library Management System using PostgreSQL. It 
 - README.md: This file, providing an overview of the project.
 
 ## Queries
-- 1.Retrieve all books published after the year 2000.
-- 2. Find the total number of available copies for each book.
-- 3. List all authors who were born before 1970.
-- 4. Identify members who joined the library in the last month.
+- Retrieve all books published after the year 2000.
+- Find the total number of available copies for each book.
+- List all authors who were born before 1970.
+- Identify members who joined the library in the last month.
 
 ## Contributing
 Feel free to contribute to this project. If you have any improvements or suggestions, submit a pull request.
