@@ -1,0 +1,26 @@
+-- create_tables.sql
+
+-- Create authors table
+CREATE TABLE authors (
+    author_id SERIAL PRIMARY KEY,
+    author_name VARCHAR(100) NOT NULL,
+    birth_year INTEGER,
+    nationality VARCHAR(50)
+);
+
+-- Create books table
+CREATE TABLE books (
+    book_id SERIAL PRIMARY KEY,
+    title VARCHAR(200) NOT NULL,
+    author_id INTEGER REFERENCES authors(author_id),
+    publication_year INTEGER,
+    genre VARCHAR(50),
+    available_copies INTEGER
+);
+
+-- Create members table
+CREATE TABLE members (
+    member_id SERIAL PRIMARY KEY,
+    member_name VARCHAR(100) NOT NULL,
+    membership_start_date DATE
+);
