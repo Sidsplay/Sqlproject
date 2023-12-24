@@ -1,0 +1,19 @@
+-- insert_data.sql
+
+-- Insert data into authors table
+INSERT INTO authors (author_name, birth_year, nationality) VALUES
+    ('Author1', 1965, 'Nationality1'),
+    ('Author2', 1972, 'Nationality2'),
+    -- Add more authors
+
+-- Insert data into books table
+INSERT INTO books (title, author_id, publication_year, genre, available_copies) VALUES
+    ('Book1', 1, 2005, 'Genre1', 10),
+    ('Book2', 2, 1998, 'Genre2', 15),
+    -- Add more books
+
+-- Insert data into members table
+INSERT INTO members (member_name, membership_start_date) VALUES
+    ('Member1', '2022-01-01'),
+    ('Member2', '2022-02-15'),
+    -- Add more members
